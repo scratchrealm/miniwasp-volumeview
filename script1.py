@@ -165,6 +165,22 @@ def main():
     #
     E,H = mw.em_solver_wrap_postproc(string1,dP,contrast_matrix,omega,eps,soln,targs)
 
+    uri = kc.store_pkl({
+        'Nx': nx,
+        'Ny': ny,
+        'Nz': nz,
+        'dx': dx,
+        'dy': dy,
+        'dz': dz,
+        'x0': xmin,
+        'y0': ymin,
+        'z0': zmin,
+        'E': E.reshape((3, nx, ny, nz)),
+        'H': H.reshape((3, nx, ny, nz))
+    })
+    print(uri)
+    # output: sha1://1c71f894e606262dc3cadaef036fc9e94a8337b6/file.pkl
+
 def populate_data():
     if os.path.exists('data'):
         print('NOTE: Directory already exists: data')
