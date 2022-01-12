@@ -1,3 +1,5 @@
+# 1/12/2022 on ccmlin008
+# sha1://528f6b30b27dcfb5eb78725c8691a2890227c383/file.pkl
 import os
 import math
 import fmm3dpy
@@ -179,7 +181,6 @@ def main():
         'H': H.reshape((3, nx, ny, nz))
     })
     print(uri)
-    # output: sha1://1c71f894e606262dc3cadaef036fc9e94a8337b6/file.pkl
 
 def populate_data():
     if os.path.exists('data'):
