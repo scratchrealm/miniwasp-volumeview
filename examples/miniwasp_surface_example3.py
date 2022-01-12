@@ -1,5 +1,5 @@
 # 1/12/2022
-# https://figurl.org/f?v=gs://figurl/volumeview-2&d=f1309ec6a281bd0be468e6fb7d50adc2ec8b0b59&channel=flatiron1&label=miniwasp_surface_example2
+# https://figurl.org/f?v=gs://figurl/volumeview-2&d=f1309ec6a281bd0be468e6fb7d50adc2ec8b0b59&channel=flatiron1&label=miniwasp_surface_example3
 
 import numpy as np
 import kachery_client as kc
@@ -78,7 +78,7 @@ def main():
     W.add_grid_scalar_field(name='H_mag', grid=grid, data=np.sum(np.abs(H)**2, axis=0).astype(np.float32))
 
     F = W.create_figure()
-    url = F.url(label='miniwasp_surface_example2')
+    url = F.url(label='miniwasp_surface_example3')
     print(url)
 
 if __name__ == '__main__':
