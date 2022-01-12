@@ -169,12 +169,12 @@ def main():
         'Nx': nx,
         'Ny': ny,
         'Nz': nz,
-        'dx': dx,
-        'dy': dy,
-        'dz': dz,
-        'x0': xmin,
-        'y0': ymin,
-        'z0': zmin,
+        'dx': xs[1] - xs[0],
+        'dy': ys[1] - ys[0],
+        'dz': zs[1] - zs[0],
+        'x0': xs[0],
+        'y0': ys[0],
+        'z0': zs[0],
         'E': E.reshape((3, nx, ny, nz)),
         'H': H.reshape((3, nx, ny, nz))
     })
