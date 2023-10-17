@@ -1,12 +1,12 @@
-# 5/6/2022
-# https://figurl.org/f?v=gs://figurl/volumeview-3&d=ipfs://bafkreiflucxhbflk7s4v5l7coxj7prixec5a5z65gia4atpvuh2wtx6fxa&label=rbc_surface_scalar_fields
+# 10/17/2023
+# https://figurl.org/f?v=gs://figurl/volumeview-3&d=sha1://5a9cc08b0d8ce7a71c132b41bb5f88b9247568ba&label=rbc_surface_scalar_fields
 
 import kachery_cloud as kcl
 import volumeview as vv
 
 def main():
     # your node needs to be a member of the flatiron1 kachery channel to obtain this file
-    vtk_uri = 'ipfs://bafkreiezdffcektdjjw6uh6kyxdrtzonwhbvns5btozta5smknml4oala4?label=rbc_001.vtk'
+    vtk_uri = 'sha1://e54d59b5f12d226fdfe8a0de7d66a3efd1b83d69?label=rbc_001.vtk'
     vtk_path = kcl.load_file(vtk_uri)
 
     vertices, faces = vv._parse_vtk_unstructured_grid(vtk_path)
